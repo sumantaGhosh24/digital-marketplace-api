@@ -43,7 +43,7 @@ const uploadCtrl = {
 
       cloudinary.v2.uploader.upload(
         file.tempFilePath,
-        {folder: "yesno"},
+        {folder: "digital-marketplace"},
         async (error, result) => {
           if (error) {
             res.status(400).json({message: error.message});
@@ -101,7 +101,7 @@ const uploadCtrl = {
       for (const image of file) {
         await cloudinary.v2.uploader.upload(
           image.tempFilePath,
-          {folder: "yesno"},
+          {folder: "digital-marketplace"},
           async (error, result) => {
             if (error) {
               res.status(400).json({message: error.message});

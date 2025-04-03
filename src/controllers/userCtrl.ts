@@ -81,9 +81,9 @@ const userCtrl = {
         },
       });
       await transporter.sendMail({
-        from: "Yes No || Register Verification",
+        from: "Digital Marketplace || Register Verification",
         to: to,
-        subject: "Email Verification Link - Yes No",
+        subject: "Email Verification Link - Digital Marketplace",
         html: `<!doctype html>
     <html lang=en>
     <head>
@@ -113,10 +113,10 @@ const userCtrl = {
         h2{font-size:calc(1.325rem+.9vw);}
         p{margin-top:0;margin-bottom:1rem;}
     </style>
-    <title>Yes No || Register Verification</title>
+    <title>Digital Marketplace || Register Verification</title>
     </head>
     <body>
-    <div class="container-fluid bg-primary text-center"><h1 class="text-white p-5">Yes No || Register Verification</h1></div>
+    <div class="container-fluid bg-primary text-center"><h1 class="text-white p-5">Digital Marketplace || Register Verification</h1></div>
     <div class="container my-5"><h2 class="fw-bold">Hello,</h2><p class="text-muted">Click below button to activate your account.</p></div>
     <div class="container my-5"><p class="text-muted">If you not ask for verify your account, you can ignore this email.</p><h2 class="fw-bold">Thanks for Register our website.</h2></div>
     <div class="container mb-5"><div class="position-relative"><a class="position-absolute top-50 start-50 p-3 btn btn-primary" href="${process.env.FRONTEND_URL}/register-verify?token=${token}">Activate Account</a></div></div>
@@ -236,9 +236,9 @@ const userCtrl = {
         },
       });
       await transporter.sendMail({
-        from: "Yes No || Login Verification",
+        from: "Digital Marketplace || Login Verification",
         to: user.email,
-        subject: "Email Verification Link - Yes No",
+        subject: "Email Verification Link - Digital Marketplace",
         html: `<!doctype html>
     <html lang=en>
     <head>
@@ -268,10 +268,10 @@ const userCtrl = {
         h2{font-size:calc(1.325rem+.9vw);}
         p{margin-top:0;margin-bottom:1rem;}
     </style>
-    <title>Yes No || Login Two Step Verification</title>
+    <title>Digital Marketplace || Login Two Step Verification</title>
     </head>
     <body>
-    <div class="container-fluid bg-primary text-center"><h1 class="text-white p-5">Yes No || Login Two Step Verification</h1></div>
+    <div class="container-fluid bg-primary text-center"><h1 class="text-white p-5">Digital Marketplace || Login Two Step Verification</h1></div>
     <div class="container my-5"><h2 class="fw-bold">Hello,</h2><p class="text-muted">The bottom number is your otp, enter the number to complete your login process.</p></div>
     <div class="container my-5"><p class="text-muted">If you not ask for login in your account, you can ignore this email.</p><h2 class="fw-bold">Thanks for Register our website.</h2></div>
     <div class="container mb-5"><div class="position-relative"><code style="color: white; background: gray; padding: 10px 16px; font-weight: bold; font-size: 24px;">${randomNumber}</code></div></div>
@@ -421,9 +421,9 @@ const userCtrl = {
       });
 
       await transporter.sendMail({
-        from: "Yes No || Forgot Password",
+        from: "Digital Marketplace || Forgot Password",
         to: user.email,
-        subject: "Email Verification Link - Yes No",
+        subject: "Email Verification Link - Digital Marketplace",
         html: `<!doctype html>
 <html lang=en>
 <head>
@@ -453,10 +453,10 @@ const userCtrl = {
 	h2{font-size:calc(1.325rem+.9vw);}
 	p{margin-top:0;margin-bottom:1rem;}
 </style>
-<title>Yes No || Forgot Password</title>
+<title>Digital Marketplace || Forgot Password</title>
 </head>
 <body>
-<div class="container-fluid bg-primary text-center"><h1 class="text-white p-5">Yes No || Forgot Password</h1></div>
+<div class="container-fluid bg-primary text-center"><h1 class="text-white p-5">Digital Marketplace || Forgot Password</h1></div>
 <div class="container my-5"><h2 class="fw-bold">Hello,</h2><p class="text-muted">Click below button to forgot your password.</p></div>
 <div class="container my-5"><p class="text-muted">If you not ask for forgot password in your email, you can ignore this email.</p><h2 class="fw-bold">Thanks for Register our website.</h2></div>
 <div class="container mb-5"><div class="position-relative"><a class="position-absolute top-50 start-50 p-3 btn btn-primary" href="${process.env.FRONTEND_URL}/confirm-forgot-password?token=${check}">Forgot Password</a></div></div>
