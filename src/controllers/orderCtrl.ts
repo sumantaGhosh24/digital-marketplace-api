@@ -6,6 +6,7 @@ import crypto from "crypto";
 import {IReqAuth} from "../types";
 import {APIFeatures} from "../lib";
 import Order from "../models/orderModel";
+import Cart from "../models/cartModel";
 
 dotenv.config();
 
@@ -72,6 +73,8 @@ const orderCtrl = {
         price: amount,
       });
       await newOrder.save();
+
+      await Cart.findOneAndDelete({user});
 
       res.json({
         message: "success",
